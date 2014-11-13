@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config ($routeProvider) ->
     $routeProvider
@@ -25,6 +26,15 @@ angular
       .when '/about',
         templateUrl: 'views/about.html'
         controller: 'AboutCtrl'
+      .when '/login',
+        templateUrl: 'views/login.html'
+        controller: 'LoginCtrl'
+      .when '/topics',
+        templateUrl: 'views/topics.html'
+        controller: 'TopicsCtrl'
+      .when '/topic/:topic_id',
+        templateUrl: 'views/topic.html'
+        controller: 'TopicCtrl'
       .otherwise
         redirectTo: '/'
 

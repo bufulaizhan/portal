@@ -69,9 +69,9 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container {
-    max-width: 730px;
+    max-width: 970px;
   }
 
   /* Remove the padding we set earlier */
@@ -89,4 +89,21 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.forceZeroPadding {
+  padding: 0 !important;
+}
+
+.combatBar {
+  height: 22px;
+}
+
+
+.progress.active.reverse .progress-bar {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -ms-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
 }
