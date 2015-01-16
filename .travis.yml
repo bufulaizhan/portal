@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "0.10"
+before_script:
+  - npm install gulp -g
+  - npm install 
+  - gulp build
+
+ script:
+  - find ./dist -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+  - npm test
+
+after_failure:
+
+after_success:
+  - echo "done"
+
+notifications:
+  slack: ngacn:g7UKlznzOydd9RD1fDwYjXLi
