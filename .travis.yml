@@ -6,7 +6,7 @@ before_script:
   - npm install 
   - gulp build
 
- script:
+script:
   - find ./dist -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
   - npm test
 
