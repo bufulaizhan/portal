@@ -1,23 +1,27 @@
 {
   "name": "portal",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "authors": [
+    "ztbsuper@gmail.com"
+  ],
+  "description": "in dev version",
+  "keywords": [
+    "angular",
+    "semantic"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "angular": "^1.3.0",
-    "json3": "^3.3.0",
-    "es5-shim": "^4.0.0",
-    "bootstrap-sass-official": "^3.2.0",
-    "angular-animate": "^1.3.0",
-    "angular-cookies": "^1.3.0",
-    "angular-resource": "^1.3.0",
-    "angular-route": "^1.3.0",
-    "angular-sanitize": "^1.3.0",
-    "angular-touch": "^1.3.0",
-    "angular-bootstrap": "~0.11.2",
-    "fontawesome": "~4.2.0"
-  },
-  "devDependencies": {
-    "angular-mocks": "~1.3.0",
-    "angular-scenario": "~1.3.0"
-  },
-  "appPath": "app"
+    "angular": "~1.3.9",
+    "angular-ui-router": "~0.2.13",
+    "semantic-ui": "~1.7.2",
+    "font-awesome": "~4.2.0"
+  }
 }
