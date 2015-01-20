@@ -1,14 +1,11 @@
 var gulp = require('gulp');
-var concat = require('gulp-concat');
-var config = require('../config').coffee;
-var vendor = require('../config').vendor;
-var sourceMap = require('gulp-sourcemaps');
+var config = require('../config').vendor;
+var uglify = require('gulp-uglifyjs');
 
-gulp.task('vendor', function(){
-	gulp.src(vendor.src)
-		.pipe(sourceMap.init())
-		.pipe(concat(vendor.target))
-		.pipe(sourceMap.write())
-		.pipe(gulp.dest(vendor.dest));
-
+gulp.task('vendor', ['bower'], function(){
+	return gulp.src(config.src)
+		.pipe(uglify(config.target, {
+			outSourceMap: true
+		}))
+		.pipe(gulp.dest(config.dest));
 });

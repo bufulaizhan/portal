@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('build', ['bower', 'sass', 'jade', 'uglify']);
+gulp.task('build', [ 'sass', 'jade', 'vendor', 'compress']);

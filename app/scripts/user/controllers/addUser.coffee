@@ -1,2 +1,2 @@
-console.log "add user"
+console.log "add 2 user"
 

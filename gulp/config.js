@@ -32,7 +32,7 @@ module.exports = {
 		files: dest + '/**'
 	},
 	vendor: {
-		src: './packages/**/*.min.js',
+		src: dest + '/packages/**/*.min.js',
 		target: 'vendor.min.js',	
 		dest: dest + '/assets'		
 	}
